@@ -1,8 +1,6 @@
 <?php
 
-
 ini_set('memory_limit','-1');
-
 
 /* When true, any existing export file will be over-written */
 $allow_clobber = false;
