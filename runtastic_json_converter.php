@@ -1,11 +1,19 @@
 <?php
 
-error_reporting(E_ERROR | E_PARSE);
+
 ini_set('memory_limit','-1');
 
 
 /* When true, any existing export file will be over-written */
 $allow_clobber = true;
+
+/* Debug PHP Warnings */
+
+$debug_php_warnings = false;
+
+if(!$debug_php_warnings){
+	error_reporting(E_ERROR | E_PARSE);
+}
 
 $input_folder  = @$argv[1];
 $output_folder = @$argv[2];
