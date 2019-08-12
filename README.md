@@ -28,6 +28,10 @@ Any errors, a few of which will cause the script to break, will be echoed to out
 
 The script should not overwrite existing files, unless you set $allow_clobber = true
 
+Memory limit is set to -1
+
+If you want to see PHP Warnings, set $debug_php_warnings = true;
+
 # Known Issues
 
 - I have not tested heart beat, although if it is present it may work.
