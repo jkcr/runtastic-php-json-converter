@@ -2,11 +2,11 @@
 
 A PHP script to convert a runtastic JSON Account Export to usable GPX Files.
 
-Recently, Runtastic decided to shutdown their website, which as far as I know, was the only way to easily export a GPX file of your runtastic activity. 
-
-They do allow you to backup your account, using the export feature, but the export they provide uses a non-standard JSON format for your tracks and the file names are encoded strings, rather than human readable.
-
 This is a basic script to convert the JSON Files found in the Sport-sessions/GPS-data/ folder to GPX files. 
+
+# Update
+
+Runstastic now includes a folder in the export, located at 'Sport-sessions/GPS-data/', which includes GPX files. So, if your goal is to get a GPX file that can be used in a different program or service, it is no longer necessary to convert the JSON file.
 
 # Usage
 
@@ -41,6 +41,5 @@ If you want to see PHP Warnings, set $debug_php_warnings = true;
 - In the interest of time, the XML data is just built using a string
 
 -  I do some basic checking to ensure the format is correct, but this assumes you are directly unzipping the backup data without any changes to file or folder structure. 
-
 
 
