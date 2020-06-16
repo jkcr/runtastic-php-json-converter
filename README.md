@@ -34,4 +34,10 @@ Memory limit is set to -1
 
 If you want to see PHP Warnings, set $debug_php_warnings = true;
 
+# Known Issues
+
+At least for my export, several of the exercises appear to be duplicated. When this happens, the 'id' is appened to the end of the file. 
+
+I've not dug into this too deep to see why this is happening. 
+
 
