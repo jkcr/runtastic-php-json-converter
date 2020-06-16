@@ -8,6 +8,8 @@ This is a basic script to convert the JSON Files found in the Sport-sessions/GPS
 
 Runstastic now includes a folder in the export, located at 'Sport-sessions/GPS-data/', which includes GPX files. So, if your goal is to get a GPX file that can be used in a different program or service, it is no longer necessary to convert the JSON file, as is described below. 
 
+However, they are not in human readable names, so you may still find this script useful.
+
 # Usage
 
 Download an account backup from Runtastic by logging in and going to Export. Download the provided Zip file and extract it. 
