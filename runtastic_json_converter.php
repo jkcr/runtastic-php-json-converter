@@ -116,13 +116,17 @@ foreach($json_files as $json_file){
 		$offset = 0;
 
 		if(isset($temp_json_data['start_time_timezone_offset'])){
-			$offset = $temp_json_data['start_time_timezone_offset'];
+			$offset = intval($temp_json_data['start_time_timezone_offset']) / 1000;
 		}
 		
 		$file_timestamp = date('Y-m-d_H-i-s', ($timestamp + $offset));
-		$export_file_name = "runtastic_export_{$file_timestamp}_{$temp_json_data['id']}.gpx";
+		$export_file_name = "runtastic_export_{$file_timestamp}.gpx";
 		$output_file = "{$output_folder}/{$export_file_name}";
-		
+
+		if(file_exists($output_file)){
+			$export_file_name = "runtastic_export_{$file_timestamp}_{$temp_json_data['id']}.gpx";
+			$output_file = "{$output_folder}/{$export_file_name}";
+		}
 	
 		if(file_exists($output_file) && !$allow_clobber){
 			echo "Export File: {$output_file} exists for {$file_path}. To allow clobbering, change variable at top\n";
