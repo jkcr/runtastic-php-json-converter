@@ -34,14 +34,4 @@ Memory limit is set to -1
 
 If you want to see PHP Warnings, set $debug_php_warnings = true;
 
-# Known Issues
-
-- I have not tested heart beat, although if it is present it may work.
-
-- Elevation, temperature, calories, and other data is not currently supported. Only latitude, longitude, time, and possibly heart beat
-
-- In the interest of time, the XML data is just built using a string
-
--  I do some basic checking to ensure the format is correct, but this assumes you are directly unzipping the backup data without any changes to file or folder structure. 
-
 
